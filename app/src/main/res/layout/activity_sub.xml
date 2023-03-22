@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFEA"
+    tools:context=".SubActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timepicker"
+        app:layout_constraintTop_toTopOf="@+id/timepicker"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="날짜"
+        android:textAppearance="@style/month_recor"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Settime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Set time"
+        android:textAppearance="@style/month_recor"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="338dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="0dp"
+        android:background="#045F1D"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/btn_save"
+        android:textColor="#F9F9F9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_rev" />
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="253dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Settime"></TimePicker>
+
+    <TextView
+        android:id="@+id/textmealinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Meal Information"
+        android:textAppearance="@style/month_recor"
+        android:textColor="#535353"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timepicker"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_rev"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="리뷰"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_cal"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText_food"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="음식"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText_map"
+        app:layout_constraintTop_toBottomOf="@+id/editText_map" />
+
+    <EditText
+        android:id="@+id/editText_num"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="수량"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editText_food"
+        app:layout_constraintTop_toBottomOf="@+id/editText_food" />
+
+    <Button
+        android:id="@+id/button_map"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:background="#045F1D"
+        android:fontFamily="sans-serif-medium"
+        android:text="Map"
+        android:textColor="#F9F9F9"
+        app:layout_constraintStart_toEndOf="@+id/editText_map"
+        app:layout_constraintTop_toTopOf="@+id/editText_map" />
+
+    <EditText
+        android:id="@+id/editText_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="식사 장소 / 구글맵"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmealinfo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_addfood"
+        android:layout_width="48dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#045F1D"
+        android:fontFamily="sans-serif-medium"
+        android:text="Okay"
+        android:textColor="#F9F9F9"
+        app:layout_constraintStart_toEndOf="@+id/editText_num"
+        app:layout_constraintTop_toTopOf="@+id/editText_num" />
+
+    <TextView
+        android:id="@+id/showview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_addfood"
+        app:layout_constraintTop_toTopOf="@+id/editText_food" />
+
+    <EditText
+        android:id="@+id/editText_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="칼로리"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_num"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_calorie"
+        android:layout_width="79dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="148dp"
+        android:background="#045F1D"
+        android:fontFamily="sans-serif-medium"
+        android:text="Add"
+        android:textColor="#F9F9F9"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/editText_cal"
+        app:layout_constraintTop_toBottomOf="@+id/button_map"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

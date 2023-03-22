@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Diet App</string>
+    <string name="btn_morning">아침</string>
+    <string name="btn_lunch">점심</string>
+    <string name="btn_dinner">저녁</string>
+    <string name="btn_sub">Check The Day Record</string>
+    <string name="btn_sub2">Check The Month Record</string>
+    <string name="btn_save">Record</string>
+    <string name="btn_edit">수정</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="better_days">BETTER DAYS</string>
+    <string name="month_recor">Month Record</string>
+
+</resources>

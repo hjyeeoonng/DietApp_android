@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="#FFFFEA"
+    android:padding="10dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textAppearance="@style/month_recor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/custom_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/custom_text"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#FFFFEA"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
